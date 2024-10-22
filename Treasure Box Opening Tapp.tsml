@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ts:token xmlns:ts="http://tokenscript.org/2024/01/tokenscript"
+          xmlns:xml="http://www.w3.org/XML/1998/namespace"
+          xsi:schemaLocation="http://tokenscript.org/2024/01/tokenscript https://www.tokenscript.org/schemas/2024-01/tokenscript.xsd"
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns:ethereum="urn:ethereum:constantinople"
+          name="Treasure Box Opening Tapp">
+    <ts:label>
+        <ts:plurals xml:lang="en">
+            <ts:string quantity="one">Treasure Box Opening Tapp NFT</ts:string>
+            <ts:string quantity="other">Treasure Box Opening Tapp NFTs</ts:string>
+        </ts:plurals>
+    </ts:label>
+    <ts:meta>
+        <ts:description xml:lang="en">This game offers a total prize pool of **$1000 per round**, and each round is represented by an **NFT Tapp**. The owner of the NFT Tapp can share the Tlink to the game via their Twitter to invite followers to participate. Players need to have the **Tlink extension** installed to participate (main goal: increasing Tlink extension installations). The game features three primary actions, allowing players to open a treasure box, share the game, or purchase more chances using SLN tokens.</ts:description>
+        <ts:aboutUrl xml:lang="en">SmartLayer.network</ts:aboutUrl>
+        <ts:iconUrl xml:lang="en">SmartLayer.network/icon.png</ts:iconUrl>
+    </ts:meta>
+    <ts:contract interface="erc721" name="Treasure Box Opening TappContract">
+        <ts:address network="8453">0xC046354e34438a75e81fd6Fb54C6D422446a4248</ts:address>
+    </ts:contract>
+    <ts:origins>
+        <ts:ethereum contract="Treasure Box Opening TappContract"/>
+    </ts:origins>
+    <ts:cards>
+        <ts:card type="action" name="Open Box">
+            <ts:label>
+                <ts:string xml:lang="en">Open Box</ts:string>
+            </ts:label>
+            <ts:view xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+                <button>Open Box</button>
+            </ts:view>
+        </ts:card>
+        <ts:card type="action" name="Share to Earn">
+            <ts:label>
+                <ts:string xml:lang="en">Share to Earn</ts:string>
+            </ts:label>
+            <ts:view xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+                <button>Share to Earn</button>
+            </ts:view>
+        </ts:card>
+        <ts:card type="action" name="Get More Chance">
+            <ts:label>
+                <ts:string xml:lang="en">Get More Chance</ts:string>
+            </ts:label>
+            <ts:view xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+                <button>Get More Chance</button>
+            </ts:view>
+        </ts:card></ts:cards>
+</ts:token>
